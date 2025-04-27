@@ -1,0 +1,23 @@
+# Ignore environment variables and API keys
+.env
+
+# Ignore Python compiled files
+__pycache__/
+*.py[cod]
+
+# Ignore virtual environments
+venv/
+.env/
+*.venv
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Ignore cache and output folders
+__pycache__/
+*.egg-info/
