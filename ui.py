@@ -121,7 +121,7 @@ def send_feedback(conversation_id, message_id, feedback_type, details=None):
             "details": details
         }
         
-        response = requests.post("http://localhost:8000/feedback", json=payload)
+        response = requests.post("https://chat-1-kuwk.onrender.com/feedback", json=payload)
         if response.status_code == 200:
             return True
         return False
@@ -153,7 +153,7 @@ def process_query(query):
         # Show a spinner while waiting for response
         with st.spinner("Asha is thinking..."):
             # Make API call to backend
-            response = requests.post("http://localhost:8000/", json=payload)
+            response = requests.post("https://chat-1-kuwk.onrender.com/", json=payload)
             response_data = response.json()
             
             # Check for biased content warning
